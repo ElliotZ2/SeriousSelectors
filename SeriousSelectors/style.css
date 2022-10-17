@@ -107,7 +107,7 @@ odd number element with a particular class,
 then use what you used in the above two selectors 
 to specify what the parent must be.*/
 
-div #board > .cell:nth-child(2) {
+.cell:nth-child(3n+3) {
   background-color: black;
 }
 
@@ -125,7 +125,7 @@ of a div inside of a div when you hover over it.
 Finally, figure out how to select two types of things
 at the same time.* */
 
-selector_10{
+div div div:hover , img:hover{
   border: solid yellow thin;
 }
 
@@ -135,3 +135,30 @@ Now that your board is looking great and you've become a css selector master, he
 2. Add HTML to the index.html file that gives the person looking at your page all of the rules of checkers. This can be done however you want to. Then write your own style rules to make this section of the page look great.
 3. Research a selector that we didn't use in this lab, then find a way to use it. Feel free to add HTML as needed to make the selector applicable. 
 4. Propose a different extension of your choice. Write what the extension should look like then implement it in your code. */
+
+.cell:nth-child(3n+2) {
+  background-color: powderblue;
+}
+
+#rules{
+  background: linear-gradient(to bottom, rgb(222, 222, 222), white, rgb(222, 222, 222));
+  padding: 50px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+#rules:hover{
+  color: rgb(46, 0, 250);
+  background: linear-gradient(to bottom, rgb(139, 84, 84), white, rgb(41, 148, 128));
+}
+
+#history{
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+#history:visited{
+  color: gray;
+}
